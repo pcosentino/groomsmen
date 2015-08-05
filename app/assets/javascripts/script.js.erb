@@ -1,7 +1,9 @@
 $( document ).ready(function() {
-    // swal({
-    //     title: "Good job!",
-    //     text: "You are correct!",
-    //     type: "success"
-    // });
+    $(".incorrect").on("click", function(){
+    	swal("whoops..", "This button is currently under construction..smartass", "error");
+    });
+
+    $(".correct").on("click", function(){
+    	swal("Hey Hey!", "I knew you'd say yes!", "success");
+    });
 });

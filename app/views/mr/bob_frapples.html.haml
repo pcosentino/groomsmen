@@ -1,9 +1,15 @@
 .mr.container
 	%h1 Bob,
+	.container#blurb
+		= render partial: "/pages/blurb"
+	
+	%h1 Will You Be My Groomsman?
+	.container
+		.row
+			%button.btn.btn-success.col-xs-6.correct Yes
+			%button.btn.btn-danger.col-xs-6.incorrect No
 
-	%h4 youre awesome and stuff..
-
-
-	%h3.col-md-12 Will You Be My Groomsman?
-	%button.btn.btn-success.col-md-6.incorrect Yes
-	%button.btn.btn-danger.col-md-3.incorrect No
+	.container	
+		.row#ps
+			= render partial: "/pages/ps"
+		
