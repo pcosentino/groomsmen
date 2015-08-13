@@ -3,7 +3,7 @@ body{
 	background:#333;
 	color:#fff;
 	#bowtie{
-		background:asset-url("bowtie.png") no-repeat;
+		background:asset-data-url("bowtie.png") no-repeat;
 		height:150px;
 		width:175px;
 		display: block;
@@ -36,12 +36,12 @@ body{
 			font-size:2em;
 		}
 		.correct,{
-		background:asset-url("thumb-up.png") #4cae4c no-repeat;
+		background:asset-data-url("thumb-up.png") #4cae4c no-repeat;
 		height:140px;
 		width:140px;
 		}
 		.incorrect{
-		background:asset-url("thumb-down.png") #d9534f no-repeat;
+		background:asset-data-url("thumb-down.png") #d9534f no-repeat;
 		height:140px;
 		width:140px;	
 		}
