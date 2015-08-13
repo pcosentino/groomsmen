@@ -1,14 +1,11 @@
 .mr.container
 	%h1 Adriano,
-	.container#blurb
-		= render partial: "/pages/blurb"
 	
+	= render partial: "/pages/blurb"
+	%h1 Adriano,
+	%br
 	%h1 Will You Be My Groomsman?
-	.container
-		.row
-			%button.btn.btn-success.col-xs-6.correct Yes
-			%button.btn.btn-danger.col-xs-6.incorrect No
+	= render partial: "/pages/choice"
 
-	.container	
-		.row#ps
-			= render partial: "/pages/ps"
+
+	= render partial: "/pages/ps"

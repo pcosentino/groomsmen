@@ -1,18 +1,14 @@
 .mr.container
 	%h1 Joey,
-	.container#blurb
-		= render partial: "/pages/blurb"
-	
+
+	= render partial: "/pages/blurb"
+	%h1 Joey,
+	%br
 	%h1 Will You Be My Groomsman?
-	.container
-		.row
-			%button.btn.btn-success.col-xs-6.correct Yes
-			%button.btn.btn-danger.col-xs-6.incorrect No
+	= render partial: "/pages/choice"
 
-	.container	
-		.row#ps
-			= render partial: "/pages/ps"
 
+	= render partial: "/pages/ps"
 
 / .col-md-5
 / 	= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
