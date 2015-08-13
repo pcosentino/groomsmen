@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get 'mr/domenico_derango'
   get 'mr/joey_bruno'
   get 'mr/joe_lipsey'
+  post "/send_email" => "mr#send_email" 
 end

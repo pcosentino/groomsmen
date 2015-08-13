@@ -12,3 +12,13 @@
 	.container	
 		.row#ps
 			= render partial: "/pages/ps"
+
+
+.col-md-5
+	= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
+		
+		%br
+		.tag1 How can we help you?
+		= text_area_tag :notes, '', :name => "user[notes]", :size => "35x8"
+		%br
+		= submit_tag "Submit", :id => "submit_form_button"
