@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'page/index'
   get 'mr/johnny_pezzuto'
   get 'mr/pietro_libreri'
-  get 'mr/iggy_libreri'
+  get 'mr/ignazio_libreri'
   get 'mr/claudio_libreri'
   get 'mr/aldo_libreri'
   get 'mr/anthony_giovannelli'
