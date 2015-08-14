@@ -35,39 +35,47 @@ body{
 		button{
 			font-size:2em;
 		}
-		.correct,{
-		background:asset-data-url("thumb-up.png") #4cae4c no-repeat;
-		height:140px;
-		width:140px;
+		p{
+			margin-top:3em;
+			margin-bottom:0;
+			&:before{
+			content:asset-data-url("arrow-left.png") no-repeat;
+			}
+			&:after{
+			content:asset-data-url("arrow-right.png") no-repeat;
+			-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+			}
 		}
-		.incorrect{
-		background:asset-data-url("thumb-down.png") #d9534f no-repeat;
+		button{
+			margin-top:0;
+		}
+		.correct,{
+		background:asset-data-url("thumb-up.png") left center #4cae4c no-repeat;
+		width:140px;
 		height:140px;
-		width:140px;	
+		border-radius:50%;
+		}
+		.incorrect,.incorrect-goofball{
+		background:asset-data-url("thumb-down.png") right bottom #d9534f no-repeat;
+    width:140px;
+    height:140px;
+    border-radius:50%;
 		}
 	}
 	#ps{
 		h4{
 			line-height: 2em;
-			padding-top:5em;
+			padding-top:2em;
 		}
 	}
 }
 textarea{color:blue;}
-// #arrow{
-// 	p{
-// 	height: 60px;
-// 	margin: 0px 0 0 -40px;
-// 	line-height: 60px;
-// 	position: absolute;
-// 	left: 52%;
-// 	bottom: 3.5em;
-// 	color: #FFF;
-// 	text-align: center;
-// 	z-index: 100;
-// 	text-decoration: none;
-// 	}
-// }
+
 
 [data-ca3_icon]::before {
     font-weight: normal;
