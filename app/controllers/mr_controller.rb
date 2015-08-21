@@ -42,7 +42,9 @@ class MrController < ApplicationController
   end
 
   def vinnie_libreri
-    
+  end
+
+  def sal_alaimo
   end
 
      def send_email
