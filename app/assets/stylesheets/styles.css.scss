@@ -30,14 +30,27 @@ body{
 			padding-top:5em;
 			padding-bottom:20em;
 		}
+		#usher{
+		background:asset-data-url("usher.png") no-repeat;
+		width:250px;
+		height:199px;
+		display: block;
+    margin: 0 auto;	
+		}
+		#usher-suit{
+			width:100%;
+		}
 	}
 	#choice{
+		margin:0 auto;
+		padding-bottom: 2em;
 		button{
 			font-size:2em;
+			margin:0 auto;
 		}
 		p{
-			margin-top:3em;
-			margin-bottom:0;
+			width:150px;
+			margin: 3em auto 0 auto;
 			&:before{
 			content:asset-data-url("arrow-left.png") no-repeat;
 			}
@@ -66,7 +79,19 @@ body{
     height:140px;
     border-radius:50%;
 		}
+		textarea{
+			display: none;
+		}
+		.bob{
+			width: 325px;
+    	margin: 0 auto;
+    	#contact_form{
+    		width:150px;
+    		padding:0;
+    	}
+		}
 	}
+
 	#ps{
 		h4{
 			line-height: 2em;
@@ -74,8 +99,6 @@ body{
 		}
 	}
 }
-textarea{color:blue;}
-
 
 [data-ca3_icon]::before {
     font-weight: normal;
